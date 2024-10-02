@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Buddy - Login</title>
+    <link rel="stylesheet" href="styles2.css">
+    <script type="module" src="firebaseauth.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <!-- App Name -->
+        <h1 class="app-name">Fitness Buddy</h1>
+
+        <!-- Login Form -->
+        <div class="form-container">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit" class="btn">Login</button>
+            </form>
+
+            <!-- Google Sign-In Button -->
+            <div class="google-signin">
+                <button class="btn google-btn" id="googleSignInBtn">Login with Google</button>
+            </div>
+
+            <p>Don't have an account? <a href="#" id="signUpLink">Sign up</a></p>
+        </div>
+
+        <!-- Sign Up Form -->
+        <div class="form-container" id="signUpContainer" style="display: none;">
+            <h2>Sign Up</h2>
+            <form id="signUpForm">
+                <input type="email" id="signUpEmail" placeholder="Email" required>
+                <input type="password" id="signUpPassword" placeholder="Password" required>
+                <button type="submit" class="btn">Sign Up</button>
+            </form>
+
+            <p>Already have an account? <a href="#" id="loginLink">Login</a></p>
+        </div>
+
+    </div>
+
+    <!-- Firebase and JS -->
+    <script src="firebase.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>

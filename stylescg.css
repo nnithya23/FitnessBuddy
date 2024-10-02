@@ -1,0 +1,54 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f3e5f5;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.congratulations-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.hooray-text {
+    color: #ff7043;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.streak-message {
+    color: #6a1b9a;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.streak-display {
+    color: #6a1b9a;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#streakCount {
+    color: #ff7043;
+    font-size: 40px;
+}
+
+.go-home-btn {
+    padding: 15px 30px;
+    margin-top: 30px;
+    background-color: #6a1b9a;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.go-home-btn:hover {
+    background-color: #8e24aa;
+}

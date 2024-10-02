@@ -1,0 +1,141 @@
+/* Body Styling */
+body {
+    font-family: 'Cute Font', sans-serif;
+    background-color: #f3e5f5; /* Light purple background */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Top Panel Bar */
+.top-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #d1c4e9; /* Purple shade */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.left-icons .icon, .right-icons .streak-icon {
+    width: 30px;
+    margin: 0 10px;
+}
+
+.streak-icon {
+    width: 35px;
+}
+
+/* Heading Style */
+h2 {
+    color: #6a1b9a; /* Dark purple for headings */
+    margin-top: 20px;
+}
+
+/* Category Box Styling */
+.category-boxes {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px auto;
+    max-width: 1000px; /* Ensures a nice layout on larger screens */
+}
+
+.category {
+    background-color: #d1c4e9; /* Light purple box */
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.category:hover {
+    transform: scale(1.05); /* Slight hover effect */
+}
+
+.category-img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.category-btn {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #6a1b9a; /* Dark purple button */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.category-btn:hover {
+    background-color: #8e24aa; /* Slightly lighter purple on hover */
+}
+
+/* Suggested Videos Section */
+.youtube-videos {
+    margin: 40px 0;
+}
+
+#video-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.video-card {
+    width: 250px;
+    margin: 10px;
+    background-color: #d1c4e9;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.video-card:hover {
+    transform: scale(1.05); /* Slight hover effect */
+}
+
+.video-thumbnail {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.video-title {
+    margin: 10px 0;
+    color: #6a1b9a;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Start Workout Button */
+.start-workout-btn {
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: #6a1b9a; /* Dark purple */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.start-workout-btn:hover {
+    background-color: #8e24aa; /* Lighter purple on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .category-boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category {
+        margin-bottom: 20px;
+    }
+}

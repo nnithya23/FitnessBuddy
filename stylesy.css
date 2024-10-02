@@ -1,0 +1,75 @@
+/* General Styling */
+body {
+    font-family: 'Cute Font', sans-serif;
+    background-color: #f3e5f5;
+    color: #6a1b9a;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1, h2 {
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+.top-panel {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #ce93d8;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+}
+
+.streak-icon {
+    width: 30px;
+    height: 30px;
+}
+
+#streakCount {
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+
+.workout-container {
+    margin: 20px;
+}
+
+input, button {
+    padding: 10px;
+    margin: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+input {
+    width: 200px;
+}
+
+.btn {
+    background-color: #8e24aa;
+    color: #fff;
+    cursor: pointer;
+    width: 220px;
+}
+
+.youtube-videos {
+    margin-top: 20px;
+}
+
+.video-item {
+    margin: 20px 0;
+}
+
+iframe {
+    border: none;
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+}
+

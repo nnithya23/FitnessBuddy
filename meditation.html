@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Buddy - Meditation</title>
+    <link rel="stylesheet" href="stylesm.css">
+</head>
+<body>
+
+    <!-- Top Panel Bar -->
+    <div class="top-panel">
+        <div class="left-icons">
+            <img src="profile-icon.png" alt="Profile" class="icon">
+            <img src="gear-icon.png" alt="Settings" class="icon">
+        </div>
+        <div class="right-icons">
+            <img src="fire-icon.png" alt="Streak" class="streak-icon">
+            <span id="streakCount">5</span> <!-- Replace with dynamic streak count -->
+        </div>
+    </div>
+
+    <!-- Meditation Workout Section -->
+    <div class="workout-container">
+        <h1>Meditation Workouts</h1>
+
+        <label for="durationInput">Enter meditation duration (in minutes):</label>
+        <input type="number" id="durationInput" min="1" max="120" placeholder="e.g., 20">
+
+        <button id="fetchVideosBtn" class="btn">Get Meditation Workouts</button>
+
+        <!-- YouTube Videos Section -->
+        <div class="youtube-videos">
+            <h2>Suggested Meditation Workouts</h2>
+            <div id="videosList"></div>
+        </div>
+    </div>
+
+    <!-- Firebase and JS -->
+    <script src="firebase.js"></script>
+    <script src="youtube.js"></script> <!-- Script for fetching YouTube videos -->
+    <script>
+        document.getElementById('fetchVideosBtn').addEventListener('click', function() {
+            const workoutType = 'meditation'; // Meditation workout type
+            const duration = document.getElementById('durationInput').value;
+
+            if (duration > 0) {
+                fetchYouTubeVideos(workoutType, duration)
+                    .then(videos => {
+                        displayVideos(videos, 'videosList');
+
+                        // Increase streak count after video completion
+                        incrementStreakCount();
+                    });
+            } else {
+                alert('Please enter a valid duration.');
+            }
+        });
+
+        function incrementStreakCount() {
+            let streakCount = parseInt(document.getElementById('streakCount').innerText);
+            streakCount += 1; // Increase streak count by 1
+            document.getElementById('streakCount').innerText = streakCount;
+            updateStreakInFirebase(streakCount); // Update streak in Firebase
+        }
+
+        function updateStreakInFirebase(streak) {
+            const userId = firebase.auth().currentUser.uid;
+            const userRef = firebase.firestore().collection('users').doc(userId);
+
+            userRef.update({
+                streak: streak
+            }).then(() => {
+                console.log('Streak updated in Firestore');
+            }).catch((error) => {
+                console.error('Error updating streak:', error);
+            });
+        }
+    </script>
+</body>
+</html>

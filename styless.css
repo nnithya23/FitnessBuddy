@@ -1,0 +1,65 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5e1f7;
+    color: #5c2d91;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h1.app-name {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #8a2be2;
+}
+
+.input-container h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #8a2be2;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.btn {
+    background-color: #8a2be2;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.video-container h2 {
+    margin-top: 30px;
+    font-size: 24px;
+}
+
+.video-item {
+    margin: 20px 0;
+}
+
+.streak-container {
+    margin-top: 40px;
+}
+
+.streak-container #congratsMessage {
+    font-size: 24px;
+    color: #ff4500;
+}

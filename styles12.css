@@ -1,0 +1,75 @@
+body {
+    font-family: 'Cute Font', sans-serif;
+    background-color: #f3e5f5;
+    text-align: center;
+}
+
+h2 {
+    color: #6a1b9a;
+}
+
+.category-boxes {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.category {
+    background-color: #d1c4e9;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.category-img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.category-btn {
+    padding: 10px 20px;
+    background-color: #6a1b9a;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.category-btn:hover {
+    background-color: #8e24aa;
+}
+
+.start-workout-btn {
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: #6a1b9a;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.start-workout-btn:hover {
+    background-color: #8e24aa;
+}
+
+.top-panel {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #d1c4e9;
+}
+
+.icon {
+    width: 30px;
+    margin: 0 10px;
+}
+
+.streak-icon {
+    width: 40px;
+}

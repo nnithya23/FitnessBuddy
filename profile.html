@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Buddy - User Profile</title>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- App Name -->
+        <h1 class="app-name">Fitness Buddy</h1>
+
+        <!-- User Profile Form -->
+        <div class="form-container">
+            <h2>Create Your Profile</h2>
+            <form id="profileForm">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="number" id="age" placeholder="Age" required>
+                <input type="number" id="weight" placeholder="Weight (kg)" required>
+                <input type="text" id="target" placeholder="Your Fitness Target (e.g., Lose weight, Gain muscle)" required>
+
+                <!-- Workout Type Dropdown -->
+                <select id="workoutType" required>
+                    <option value="" disabled selected>Select your workout type</option>
+                    <option value="Meditation">Meditation</option>
+                    <option value="Yoga">Yoga</option>
+                    <option value="Cardio">Cardio</option>
+                    <option value="Strength">Strength</option>
+                </select>
+                <div class="button-container">
+                    <button class="lets-go-btn" onclick="goToNextPage()"> Go!</button>
+                </div>
+                <button type="submit" class="btn">
+                    <a href="home.html">Go!</button>
+                    </a>           </form>
+        </div>
+    </div>
+
+    <!-- Firebase and JS -->
+    <script src="firebase.js"></script>
+    <script src="profile.js"></script>
+</body>
+</html>

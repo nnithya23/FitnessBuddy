@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Buddy - Strength</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- App Name -->
+        <h1 class="app-name">Fitness Buddy - Strength</h1>
+
+        <!-- Duration Input -->
+        <div class="input-container">
+            <h2>💪 How Long Do You Want to Workout?</h2>
+            <input type="number" id="durationInput" placeholder="Enter Duration (minutes)" required>
+            <button class="btn" id="fetchVideosBtn">Get Strength Workouts</button>
+        </div>
+
+        <!-- Video Suggestions -->
+        <div id="videoSuggestions" class="video-container">
+            <h2>💥 Suggested Strength Workouts</h2>
+            <div id="videosList"></div>
+        </div>
+
+        <!-- Streak Count -->
+        <div class="streak-container">
+            <p id="congratsMessage" style="display: none;">🎉 Hooray! Your streak is now: <span id="streakCount">0</span> 🔥</p>
+        </div>
+    </div>
+
+    <!-- Firebase and JS -->
+    <script src="firebase.js"></script>
+    <script src="youtube.js"></script> <!-- Script for YouTube API -->
+    <script src="strength.js"></script> <!-- Script to fetch videos and manage streak -->
+</body>
+</html>
+

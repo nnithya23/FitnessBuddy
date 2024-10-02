@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Buddy - Home</title>
+    <link rel="stylesheet" href="styles12.css">
+</head>
+<body>
+
+    <!-- Top Panel Bar -->
+    <div class="top-panel">
+        <div class="left-icons">
+            <img src="profile-icon.png" alt="Profile" class="icon">
+            <img src="gear-icon.png" alt="Settings" class="icon">
+        </div>
+        <div class="right-icons">
+            <img src="fire-icon.png" alt="Streak" class="streak-icon">
+            <span id="streakCount">5</span> <!-- Replace with dynamic streak count -->
+        </div>
+    </div>
+
+    <!-- YouTube Video Suggestions Section -->
+    <div class="youtube-videos">
+        <h2>Suggested Workouts</h2>
+        <div id="video-container"></div>
+    </div>
+
+    <!-- Workout Categories Section -->
+    <div class="categories">
+        <h2>Categories</h2>
+        <div class="category-boxes">
+            <!-- Meditation Category -->
+            <div class="category" id="meditation">
+                <img src="meditation.png" alt="Meditation" class="category-img">
+                <span>Meditation</span>
+                <button class="category-btn" onclick="window.location.href='meditation.html'">Go to Meditation</button>
+            </div>
+
+            <!-- Yoga Category -->
+            <div class="category" id="yoga">
+                <img src="yoga.png" alt="Yoga" class="category-img">
+                <span>Yoga</span>
+                <button class="category-btn" onclick="window.location.href='yoga.html'">Go to Yoga</button>
+            </div>
+
+            <!-- Cardio Category -->
+            <div class="category" id="cardio">
+                <img src="cardio.png" alt="Cardio" class="category-img">
+                <span>Cardio</span>
+                <button class="category-btn" onclick="window.location.href='cardio.html'">Go to Cardio</button>
+            </div>
+
+            <!-- Strength Category -->
+            <div class="category" id="strength">
+                <img src="strength.png" alt="Strength" class="category-img">
+                <span>Strength</span>
+                <button class="category-btn" onclick="window.location.href='strength.html'">Go to Strength</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Start Workout Button -->
+    <button class="start-workout-btn">Start Workout</button>
+
+    <!-- Firebase and JS -->
+    <script src="firebase.js"></script>
+    <script src="home.js"></script>
+</body>
+</html>
+
